@@ -11,7 +11,6 @@ describe('App', () => {
     const element = screen.getByText("Roll Dice");
     expect(element).toBeInTheDocument();
   })
-
 });
 
 

@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={() => roll()}>Roll Dice</button>
-      <DiceTable myDice = {myDice}></DiceTable>
+      <DiceTable data-testId = "Dice" myDice = {myDice}></DiceTable>
     </div>
   );
 }
