@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Dice} from './Components/Dice'
 
 function App() {
   return (
     <div className="App">
-      
+      <Dice val={1}></Dice>
+      <Dice val={2}></Dice>
     </div>
   );
 }
