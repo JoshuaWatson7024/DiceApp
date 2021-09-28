@@ -2,8 +2,16 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  beforeEach(() => {
+    render(<App />);
+  });
+
+  it("has the roll button when the application loads", () => {
+    const element = screen.getByText("Roll Dice");
+    expect(element).toBeInTheDocument();
+  })
+
 });
+
+
