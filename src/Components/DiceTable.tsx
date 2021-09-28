@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Dice} from '../interfaces/dice';
+import {Dice} from '../classes/dice';
 import dice1 from '../Assets/dice1.png'
 import dice2 from '../Assets/dice2.png'
 import dice3 from '../Assets/dice3.png'
