@@ -9,11 +9,14 @@ import { getRandomNumber } from "./Utilities/Helpers";
 
 function App() {
   const[myDice, setMyDice] = useState<Dice>(new Dice([0,0]));
+  // In order from 2's to 12's
+  const[dataForChart, setDataForChart] = useState<Array<number>>([0,0,0,0,0,0,0,0,0,0,0]);
 
   function roll(): void{
-    for (let i = 0; i<getRandomNumber(5,10); i++){
-      setTimeout(() => {setMyDice(new Dice(myDice.getNewVals()));;}, 100*i);
+    for (let i = 0; i<getRandomNumber(8,10); i++){
+      setTimeout(() => {setMyDice(new Dice(myDice.getNewVals()));;}, 100*(i^1.9));
     }
+
   }
 
   return (
