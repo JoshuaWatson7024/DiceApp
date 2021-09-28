@@ -13,10 +13,23 @@ function App() {
   const[dataForChart, setDataForChart] = useState<Array<number>>([0,0,0,0,0,0,0,0,0,0,0]);
 
   function roll(): void{
-    for (let i = 0; i<getRandomNumber(8,10); i++){
+    let val1: number = getRandomNumber(1,6);
+    let val2: number = getRandomNumber(1,6);
+    let sum: number = val1 + val2;
+    let tempData: number[] = dataForChart;
+
+    tempData[sum-2] = tempData[sum-2] + 1;
+
+    //animation
+    let lenAnimation = getRandomNumber(8,10);
+    for (let i = 0; i<lenAnimation; i++){
       setTimeout(() => {setMyDice(new Dice(myDice.getNewVals()));;}, 100*(i^1.9));
     }
+    //make sure I end on the predestined values
+    setTimeout(() => {setMyDice(new Dice([val1,val2]));;}, 100*((lenAnimation+1)^1.9));
 
+    console.log(dataForChart);
+    
   }
 
   return (
