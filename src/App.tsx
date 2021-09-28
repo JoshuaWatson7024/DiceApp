@@ -23,7 +23,7 @@ function App() {
     //animation
     let lenAnimation = getRandomNumber(8,10);
     for (let i = 0; i<lenAnimation-1; i++){
-      await delay(100);\
+      await delay(100);
       setMyDice(new Dice(myDice.getNewVals()));
     }
     // End on predestined value
