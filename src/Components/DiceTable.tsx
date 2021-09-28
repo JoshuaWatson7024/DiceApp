@@ -26,8 +26,8 @@ export const DiceTable = ({myDice}:
 
     return(
         <div>
-            <img src={image_locations[0]}></img>
-            <img src={image_locations[1]}></img>
+            <img data-testId = "diceimg1" src={image_locations[0]}></img>
+            <img data-testId = "diceimg2" src={image_locations[1]}></img>
         </div>
     );
 }
