@@ -1,3 +1,5 @@
+import { getRandomNumber } from "../Utilities/Helpers";
+
 export interface Die {
     val: number;
 }
@@ -11,5 +13,11 @@ export class Dice{
             darr.push(d);
         }
         this.diceArr = darr;
+    }
+
+    roll(){
+        for (let i = 0; i < this.diceArr.length; i++){
+            this.diceArr[i].val = getRandomNumber();
+        }
     }
 }

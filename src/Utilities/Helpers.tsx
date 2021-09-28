@@ -1,8 +1,8 @@
 /**
- * Change a die's number to a random number
+ * Gives a random number 1-6
  * @param
- * @returns One randomly chosen element
+ * @returns Random number 1-6
  */
- export function getRandomElement<T>(items: T[]): T {
-    return items[Math.floor(Math.random()*items.length)];
+ export function getRandomNumber(): number {
+    return Math.floor(Math.random()*5 + 1);
   }
