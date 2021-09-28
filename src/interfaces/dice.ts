@@ -15,9 +15,11 @@ export class Dice{
         this.diceArr = darr;
     }
 
-    roll(){
+    getNewVals(): number[]{
+        let vals: number[] = [];
         for (let i = 0; i < this.diceArr.length; i++){
-            this.diceArr[i].val = getRandomNumber();
+            vals.push(getRandomNumber());
         }
+        return vals;
     }
 }
