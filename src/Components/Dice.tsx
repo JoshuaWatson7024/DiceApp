@@ -5,7 +5,7 @@ export const Dice = ({val}:
 ): JSX.Element => {
     return(
         <div>
-            number
+            {val}
         </div>
     );
 }
