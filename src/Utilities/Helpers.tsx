@@ -1,8 +1,8 @@
 /**
- * Gives a random number 1-6
+ * Gives a random number lower to upper
  * @param
- * @returns Random number 1-6
+ * @returns Random whole number from lower to upper (inclusive)
  */
- export function getRandomNumber(): number {
-    return Math.floor(Math.random()*6 + 1);
+ export function getRandomNumber(lower: number, upper: number): number {
+    return Math.floor(Math.random()*upper + lower);
   }

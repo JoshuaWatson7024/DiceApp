@@ -18,7 +18,7 @@ export class Dice{
     getNewVals(): number[]{
         let vals: number[] = [];
         for (let i = 0; i < this.diceArr.length; i++){
-            vals.push(getRandomNumber());
+            vals.push(getRandomNumber(1,6));
         }
         return vals;
     }
