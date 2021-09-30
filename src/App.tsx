@@ -41,8 +41,8 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => roll()}>Roll Dice</button>
       <DiceTable data-testId = "Dice" myDice = {myDice}></DiceTable>
+      <button className="RollDice" onClick={() => roll()}>Roll Dice</button>
       <DataTable data-testId = "Data" dataForTable = {dataForTable}></DataTable>
     </div>
   );
