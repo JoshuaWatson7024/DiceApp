@@ -19,7 +19,8 @@ describe('App', () => {
     const d2 = screen.getByTestId("diceimg2");
     expect(d1).toBeInTheDocument();
     expect(d2).toBeInTheDocument();
-  });
+  })
+
   });
 
 
