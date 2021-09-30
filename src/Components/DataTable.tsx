@@ -7,39 +7,39 @@ export const DataTable = ({dataForTable}:
 
     return(
         <table className="dataTable">
-            <tr>
+            <tr className = "Labels">
                 <td>
-                    2's
+                    <strong>2's</strong>
                 </td>
                 <td>
-                    3's
+                    <strong>3's</strong>
                 </td>
                 <td>
-                    4's
+                    <strong>4's</strong>
                 </td>
                 <td>
-                    5's
+                    <strong>5's</strong>
                 </td>
                 <td>
-                    6's
+                    <strong>6's</strong>
                 </td>
                 <td>
-                    7's
+                    <strong>7's</strong>
                 </td>
                 <td>
-                    8's
+                    <strong>8's</strong>
                 </td>
                 <td>
-                    9's
+                    <strong>9's</strong>
                 </td>
                 <td>
-                    10's
+                    <strong>10's</strong>
                 </td>
                 <td>
-                    11's
+                    <strong>11's</strong>
                 </td>
                 <td>
-                    12's
+                    <strong>12's</strong>
                 </td>
             </tr>
             <tr>
