@@ -5,6 +5,8 @@
 .RollDice{
   position: relative;
   top: 115px;
+  font-size: x-large;
+  background-color: rgb(255,0,0);
 }
 
 .Die{
@@ -27,7 +29,6 @@
   height: 300px;
   margin: auto;
   z-index: -1;
-  border: 5px solid rgba(204, 79, 6, 0.664);
   background-color: rgb(123, 221, 66);
   left:-100px;
   top: 50px;
