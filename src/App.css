@@ -5,8 +5,10 @@ body{ background: #000000;}
 }
 
 .RollDice{
-  position: relative;
-  top: 115px;
+  position: absolute;
+  width: 10%;
+  left: 45%;
+  top: 375px;
   font-size: xx-large;
   background-color: rgb(255,0,0);
 }

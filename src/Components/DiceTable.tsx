@@ -24,11 +24,21 @@ export const DiceTable = ({myDice}:
         );
     }
 
-    return(
-        <div className="Dice">
-                <img className="Die" data-testId = "diceimg1" src={image_locations[0]}></img>
-                <img className="Die" data-testId = "diceimg2" src={image_locations[1]}></img>
-        </div>
-    );
+
+    if (myDice.diceArr[0].val){
+        return(
+            <div className="Dice">
+                    <img className="Die" data-testId = "diceimg1" src={image_locations[0]}></img>
+                    <img className="Die" data-testId = "diceimg2" src={image_locations[1]}></img>
+            </div>
+        );
+    }
+    else{
+        return(
+            <div className="Dice">
+            </div>
+        );
+    }
+
 }
 
