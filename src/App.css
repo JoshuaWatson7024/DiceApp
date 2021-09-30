@@ -5,7 +5,7 @@
 .RollDice{
   position: relative;
   top: 115px;
-  font-size: x-large;
+  font-size: xx-large;
   background-color: rgb(255,0,0);
 }
 
@@ -32,4 +32,25 @@
   background-color: rgb(123, 221, 66);
   left:-100px;
   top: 50px;
+}
+
+table, th, td {
+  font-size: large;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  height:50px;
+}
+
+td{
+  width:50px;
+}
+
+table{
+  position: absolute;
+  left: 31%;
+  top: 75%;
+  height: 10%;
 }
