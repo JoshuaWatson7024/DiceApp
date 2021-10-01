@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/DiceApp/static/css/main.40c50bb3.chunk.css",
+    "main.js": "/DiceApp/static/js/main.1e0418c1.chunk.js",
+    "main.js.map": "/DiceApp/static/js/main.1e0418c1.chunk.js.map",
+    "runtime-main.js": "/DiceApp/static/js/runtime-main.500d9537.js",
+    "runtime-main.js.map": "/DiceApp/static/js/runtime-main.500d9537.js.map",
+    "static/js/2.ab1ed8d5.chunk.js": "/DiceApp/static/js/2.ab1ed8d5.chunk.js",
+    "static/js/2.ab1ed8d5.chunk.js.map": "/DiceApp/static/js/2.ab1ed8d5.chunk.js.map",
+    "static/js/3.2c479fe6.chunk.js": "/DiceApp/static/js/3.2c479fe6.chunk.js",
+    "static/js/3.2c479fe6.chunk.js.map": "/DiceApp/static/js/3.2c479fe6.chunk.js.map",
+    "index.html": "/DiceApp/index.html",
+    "static/css/main.40c50bb3.chunk.css.map": "/DiceApp/static/css/main.40c50bb3.chunk.css.map",
+    "static/js/2.ab1ed8d5.chunk.js.LICENSE.txt": "/DiceApp/static/js/2.ab1ed8d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.500d9537.js",
+    "static/js/2.ab1ed8d5.chunk.js",
+    "static/css/main.40c50bb3.chunk.css",
+    "static/js/main.1e0418c1.chunk.js"
+  ]
+}
