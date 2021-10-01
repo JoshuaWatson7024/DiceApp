@@ -6,7 +6,8 @@ export const DataTable = ({dataForTable}:
 
 
     return(
-        <table className="dataTable">
+        <table data-testId = "data" className="dataTable">
+            <tbody>
             <tr className = "Labels">
                 <td id="2a">
                     <strong>2's</strong>
@@ -77,6 +78,7 @@ export const DataTable = ({dataForTable}:
                     {dataForTable[10]}
                 </td>
             </tr>
+            </tbody>
         </table>
     )
 }
