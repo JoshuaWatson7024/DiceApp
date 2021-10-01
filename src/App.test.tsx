@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { delay } from './Utilities/Helpers';
 
 describe('App', () => {
   beforeEach(() => {
@@ -12,15 +13,11 @@ describe('App', () => {
     expect(element).toBeInTheDocument();
   })
 
-  it("shows the dice when you roll", async () => {
-    const button = screen.getByText("Roll Dice");
-    button.click();
-    const d1 = await screen.getByTestId("diceimg1");
-    const d2 = screen.getByTestId("diceimg2");
-    expect(d1).toBeInTheDocument();
-    expect(d2).toBeInTheDocument();
+  it("has the data table", async () => {
+    const element = screen.getByTestId("data");
+    expect(element).toBeInTheDocument();
   })
 
-  });
+});
 
 
