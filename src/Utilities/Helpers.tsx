@@ -11,3 +11,21 @@
   export function delay(timeInMillis: number): Promise<void> {
     return new Promise((resolve) => setTimeout(() => resolve(), timeInMillis));
   }
+
+  export function setDataColors(data: number[]): void{
+    let rg: number[] = [0,0,0,0,0,0,0,0,0,0,0];
+    let max: number = data[0];
+    for (let i=1; i<data.length; i++){
+      if (data[i] > max){
+        max = data[i];
+      }
+    }
+    if (max === 0){
+      return;
+    }
+    for (let i=0; i<data.length; i++){
+      rg[i] = 255*(1-data[i]/max);
+      document.getElementById((i+2).toString()+"a")?.style.setProperty("background-color", "rgb("+rg[i].toString()+","+rg[i].toString()+",255)");
+      document.getElementById((i+2).toString()+"b")?.style.setProperty("background-color", "rgb("+rg[i].toString()+","+rg[i].toString()+",255)");
+  }
+}

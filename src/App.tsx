@@ -6,7 +6,7 @@ import './App.css';
 import {DataTable} from './Components/DataTable'
 import {DiceTable} from './Components/DiceTable'
 import {Dice} from './classes/dice'
-import { getRandomNumber, delay } from "./Utilities/Helpers";
+import { getRandomNumber, delay, setDataColors } from "./Utilities/Helpers";
 
 function App() {
   const[myDice, setMyDice] = useState<Dice>(new Dice([0,0]));
@@ -36,8 +36,8 @@ function App() {
     setDataForTable(tempData);
     //this makes it so my table updates
     setS(!s);
+    setDataColors(dataForTable);
   }
-  
 
   return (
     <div className="App">
